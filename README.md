@@ -3,9 +3,9 @@
 
 ## About this Course 
 
-    Master GitHub Actions from fundamentals to advanced CI/CD pipelines in this comprehensive masterclass. Through hands-on exercises, you'll learn to automate, optimize, and secure workflows. This course covers everything from basic building blocks to advanced features like custom actions, reusable workflows, and security best practices.
+Master GitHub Actions from fundamentals to advanced CI/CD pipelines in this comprehensive masterclass. Through hands-on exercises, you'll learn to automate, optimize, and secure workflows. This course covers everything from basic building blocks to advanced features like custom actions, reusable workflows, and security best practices.
 
-    Perfect for developers and DevOps engineers, this course requires no prior GitHub Actions experience, though basic GitHub knowledge is beneficial.
+Perfect for developers and DevOps engineers, this course requires no prior GitHub Actions experience, though basic GitHub knowledge is beneficial.
 
 ### Key Topics Covered
 
