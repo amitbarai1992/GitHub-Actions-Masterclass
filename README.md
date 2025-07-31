@@ -1,13 +1,18 @@
-# Mastering GitHub Actions: From Beginner to Expert
+![alt text](https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/e3/0e478b09f14adfb4e9ec5365093fb9/3.svg?auto=format%2Ccompress&dpr=1&w=160&h=24)
+# GitHub Actions Masterclass: From Beginner to Advanced on Coursera by PacktPublishing
 
-GitHub Actions Masterclass: From Beginner to Advanced on Coursera by PacktPublishing
+## About this Course 
 
-<!-- ### Course link (with a big discount 🙂): https://www.lauromueller.com/courses/mastering-github-actions
+    Master GitHub Actions from fundamentals to advanced CI/CD pipelines in this comprehensive masterclass. Through hands-on exercises, you'll learn to automate, optimize, and secure workflows. This course covers everything from basic building blocks to advanced features like custom actions, reusable workflows, and security best practices.
 
-**Check my other courses:** 
+    Perfect for developers and DevOps engineers, this course requires no prior GitHub Actions experience, though basic GitHub knowledge is beneficial.
 
-- 👉 The Complete Docker and Kubernetes Course: From Zero to Hero - https://www.lauromueller.com/courses/docker-kubernetes
-- 👉 Mastering Terraform: From Beginner to Expert - https://www.lauromueller.com/courses/mastering-terraform
-- 👉 Write better code: 20 code smells and how to get rid of them - https://www.lauromueller.com/courses/writing-clean-code
+### Key Topics Covered
 
-Welcome everyone! -->
+- **Fundamentals**: Workflows, jobs, steps, and runners.
+- **Triggers**: Automating workflows with `workflow_dispatch`, `push`, `pull_request`, and more.
+- **Advanced Features**: Using expressions, contexts, event filters, and matrices.
+- **Artifacts & Caching**: Storing data between jobs and speeding up workflows.
+- **Custom Actions**: Building your own actions to encapsulate reusable logic.
+- **Reusable Workflows**: Sharing and reusing entire workflows across repositories.
+- **Security**: Securing your workflows with secrets and best practices.
