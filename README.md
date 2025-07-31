@@ -1,5 +1,5 @@
 ![alt text](https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/e3/0e478b09f14adfb4e9ec5365093fb9/3.svg?auto=format%2Ccompress&dpr=1&w=160&h=24)
-# GitHub Actions Masterclass: From Beginner to Advanced on Coursera by PacktPublishing
+# GitHub Actions Masterclass: From Beginner to Advanced on <span style="color:blue;">Coursera</span> by <span style="color:orange;"><Packt></span> Publishing
 
 ## About this Course 
 
