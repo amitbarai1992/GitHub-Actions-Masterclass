@@ -3,7 +3,7 @@ name: 03 - Workflow Runners
 
 on: 
   workflow_dispatch:
-  push:
+  # push:
 
 jobs:
   ubuntu-echo:
