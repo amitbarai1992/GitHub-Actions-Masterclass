@@ -1,0 +1,6 @@
+{
+    "workbench.editor.enablePreview": false,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
+}
