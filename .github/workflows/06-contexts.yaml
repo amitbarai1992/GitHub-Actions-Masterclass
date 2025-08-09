@@ -14,8 +14,8 @@ on:
 
 # Environment variables available to all jobs and steps in the workflow.
 env:
-  MY_WORKFLOW_VAR: 'workflow'
-  MY_OVERWRITTEN_VAR: 'workflow'
+  MY_WORKFLOW_VAR: "workflow"
+  MY_OVERWRITTEN_VAR: "workflow"
 
 jobs:
   echo-data:
@@ -23,8 +23,8 @@ jobs:
     # Environment variables available only to this job and its steps.
     # Note: MY_OVERWRITTEN_VAR here overrides the workflow-level variable.
     env:
-      MY_JOB_VAR: 'job'
-      MY_OVERWRITTEN_VAR: 'job'
+      MY_JOB_VAR: "job"
+      MY_OVERWRITTEN_VAR: "job"
     steps:
       # The 'github' context contains information about the workflow run and the event that triggered it.
       - name: Display information
@@ -46,7 +46,7 @@ jobs:
         # A step-level environment variable. This will override any job or workflow-level
         # variables with the same name for the duration of this step.
         env:
-          MY_OVERWRITTEN_VAR: 'step'
+          MY_OVERWRITTEN_VAR: "step"
         run: |
           # ${{ env.MY_WORKFLOW_VAR }} will resolve to 'workflow'.
           echo "Workflow env: ${{ env.MY_WORKFLOW_VAR }}"
