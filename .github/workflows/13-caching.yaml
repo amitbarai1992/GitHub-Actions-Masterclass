@@ -3,22 +3,36 @@ name: 13 - Using caching
 on:
   workflow_dispatch:
     inputs:
+      # A boolean input to decide whether to use caching in the workflow run.
       use-cache:
         description: Whether to execute cache step
         type: boolean
         default: true
 
-# 1. Checkout the code
-# 2. Install dependancies
-# 3. Linting, formatting, unit tetsing, building
-# 4. Deploy to non-prod
+      # choose version at run level
+      node-version:
+        description: Node version
+        type: choice
+        options:
+          - 18.x
+          - 20.x
+          - 23.x
+        default: 23.x
 
 jobs:
+  # build job that performs the following steps:
+  # 1. Checks out the code.
+  # 2. Sets up the specified Node.js version.
+  # 3. Installs dependencies.
+  # 4. Runs tests.
+  # 5. Builds the application.
+  # 6. Simulates deployment to a non-production environment.
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: 13-caching/react-app
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -26,7 +40,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: "20.x"
+          node-version: ${{ inputs.node-version }}
 
       - name: Install dependancies
         run: npm ci
