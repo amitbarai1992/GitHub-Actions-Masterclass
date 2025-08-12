@@ -16,7 +16,7 @@ jobs:
           - windows-latest
         include:
           - os: ubuntu-latest
-            node-verion: 16.x
+            node-verion: 21.x
           - os: ubuntu-latest
             node-version: 23.x
             tag: experimental
