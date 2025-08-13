@@ -19,7 +19,7 @@ jobs:
         uses: ./.github/actions/composite-cache-deps
         with:
           node-version: 20.x
-          worrking-dir: ${{ env.working-directory }}
+          working-dir: ${{ env.working-directory }}
       - name: Test
         run: npm run test
       - name: Build
