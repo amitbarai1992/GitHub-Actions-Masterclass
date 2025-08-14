@@ -22,9 +22,10 @@ runs:
       id: cache
       uses: actions/cache@v3
       with:
-        path: ${{ inputs.working-dir }}/node_moodules
-        key: node-modules-${{ hashfiles('${{ inputs.working-dir }}/package-lock.json') }}
+        path: ${{ inputs.working-dir }}/node_modules
+        key: node-modules-${{ hashFiles(format('{0}/package-lock.json', inputs.working-dir)) }}
     - name: Install dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
       run: npm ci
       shell: bash
       working-directory: ${{ inputs.working-dir }}
